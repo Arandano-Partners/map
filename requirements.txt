@@ -1,0 +1,5 @@
+aiohttp
+elasticsearch==8.14.0
+pytz
+redis
+tzlocal
