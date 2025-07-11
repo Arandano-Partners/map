@@ -49,31 +49,35 @@
 
     <body>
 
-    <div id="map"></div>
-    <div id='informIP'></div>
+        <div id="map"></div>
+        <div id='informIP'></div>
 
         <div class="myStats">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="myStatsHeaderImg">
-                            <img src="static/images/logo.png" width="100">
-                        </td>
-                        <td class="myStatsHeader" id="honeypotStatsHeader">CONNECTED</td>
-                        <td class="myStatsHeader">Last 1m:</td>
-                        <td class="myStatsValue" id="last_1m"> - </td>
-                        <td class="myStatsHeader">Last 1h:</td>
-                        <td class="myStatsValue" id="last_1h"> - </td>
-                        <td class="myStatsHeader">Last 24h:</td>
-                        <td class="myStatsValue" id="last_24h"> - </td>
-                        <!-- <td class="myStatsHeaderImg partner">
-                            <img src="" height="50">
-                        </td> -->
-                        <td class="myStatsHeaderRight">ONIX – Cybersecurity – Threat Intelligence V1.2</td>
-                    </tr> <!--close myStats row-->
-                </tbody> <!--close myStats body-->
-            </table> <!--close myStats table-->
-        </div> <!--close myStats-->
+            <!-- metrics -->
+            <div class="stats-left">
+                <span class="myStatsHeader" id="honeypotStatsHeader">CONNECTED</span>
+
+                <span class="myStatsHeader">Last&nbsp;1m:</span>
+                <span class="myStatsValue"  id="last_1m">-</span>
+
+                <span class="myStatsHeader">Last&nbsp;1h:</span>
+                <span class="myStatsValue"  id="last_1h">-</span>
+
+                <span class="myStatsHeader">Last&nbsp;24h:</span>
+                <span class="myStatsValue"  id="last_24h">-</span>
+            </div>
+
+            <!-- logo + subtitle -->
+            <div class="stats-centre">
+                <img class="logo" src="static/images/logo.png" width="100" alt="Onix logo">
+                <span class="subtitle">ONIX – Cybersecurity – Threat Intelligence V1.2</span>
+            </div>
+
+            <!-- version number -->
+            <div class="stats-right">
+                1000000008186920000000000012203/695
+            </div>
+        </div>
 
         <div class='container-fluid'>
             <div class='row'>
@@ -220,7 +224,7 @@
             </div> <!--close row-->
         </div> <!--close dashboard-->
 
-    <script src="static/map.js" defer></script>
+        <script src="static/map.js" defer></script>
 
     </body>
 
