@@ -11,7 +11,7 @@ RUN apk add --no-cache --virtual .build-deps \
 COPY . .
 
 RUN pip install --upgrade pip && \
-    pip wheel --no-deps -r requirements.txt -w /wheels
+    pip wheel -r requirements.txt -w /wheels
 
 FROM python:${PYTHON_VERSION}-${ALPINE_VERSION}
 
